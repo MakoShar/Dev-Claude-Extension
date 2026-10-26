@@ -1,0 +1,7 @@
+{
+  "skills": [
+    { "name": "frontend-design", "version": "1.0.0" },
+    { "name": "mempalace", "version": "1.0.0" },
+    { "name": "playwright", "version": "1.0.0" }
+  ]
+}

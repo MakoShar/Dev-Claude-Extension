@@ -1,0 +1,9 @@
+.git/**
+.vscode/**
+.claude/**
+src/**
+sync_skills.py
+*.vsix
+node_modules/**
+tsconfig.json
+**/*.map

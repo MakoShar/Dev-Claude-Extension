@@ -1,0 +1,26 @@
+{
+  "name": "devos-skills-synchronizer",
+  "displayName": "Devos Skills Synchronizer",
+  "description": "Safely sync bundled Claude Code skills into a workspace.",
+  "version": "0.0.2",
+  "publisher": "devos",
+  "license": "MIT",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished", "onCommand:devosSkills.syncSkills"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [{ "command": "devosSkills.syncSkills", "title": "Devos Skills: Sync Skills" }]
+  },
+  "scripts": {
+    "compile": "tsc -p .",
+    "validate": "npm run compile",
+    "package": "npm run validate && vsce package --no-dependencies --out devos-skills-synchronizer-0.0.2.vsix"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/vscode": "1.85.0",
+    "@vscode/vsce": "^3.2.1",
+    "typescript": "^5.4.5"
+  }
+}
