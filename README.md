@@ -28,24 +28,6 @@ After changing `required_skills.json` or any bundled skill, run
 `python sync_skills.py`. It validates that every required skill has a bundled
 `SKILL.md`, compiles the extension, and replaces the root VSIX package.
 
-## Publish the source on GitHub
-
-Create an empty GitHub repository, then run the following from this project
-directory, replacing the placeholder URL:
-
-```powershell
-git init
-git add .
-git commit -m "Initial Devos Skills Synchronizer extension"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-git push -u origin main
-```
-
-Create a GitHub Release and upload the generated `.vsix` file as the release
-asset. This lets users download the installer without committing generated
-packages to the source history.
-
 > A locally installed VSIX cannot be synchronized through VS Code Settings
 > Sync. To support Settings Sync, publish the extension to the VS Code
 > Marketplace under a registered publisher account.
